@@ -26,7 +26,7 @@ function AppUI() {
         <ToDoSearch/>
         
         <ToDoList>
-            {!error && <ToDoError error={error}/>}
+            {error && <ToDoError error={error}/>}
             {loading && <ToDoLoading/>}
             {(!loading && !searchedToDo.length) && <ToDoEmpty/>}
             

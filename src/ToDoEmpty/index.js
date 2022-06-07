@@ -7,14 +7,12 @@ import "./ToDoEmpty.css"
 
 function ToDoEmpty() {
   return (
-    <div>
-        <div className='container'>
-            <p className='text'>Crea tu primer to do</p>
-            <FontAwesomeIcon icon={faInbox} color="rgb(10,132,255)" size='3x'/>
-        </div>
-        <div>
-            <p className='isLoading'></p>
-        </div>
+    <div className='containerEmpty'>
+      <div className='boxEmpty'>
+        <p className='textEmpty'>Bandeja vacia</p>
+        <FontAwesomeIcon icon={faInbox} color="rgb(10,132,255)" size='3x'/>
+      </div>
+      <p className='isLoading'></p>
     </div>
   )
 }

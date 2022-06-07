@@ -1,26 +1,36 @@
-.container{
+.containerEmpty{
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.4);
+}
+
+.boxEmpty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: calc(100% - 120px);
     
 }
 
-.text{
-    margin: 24px 0 24px 24px;
-    width: calc(100% - 120px);
+.boxEmpty p{
+    flex-grow: 1;
+    color:rgb(28,28,20);
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
 }
 
 .isLoading{
-    margin: 24px 0 24px 24px;
-    width: calc(100% - 40px);
+    justify-content: flex-end;
+    margin: 24px 0px;
+    width: calc(100% - 120px);
     height: 100px;
     cursor: progress;
-    position: absolute;
     animation: 1.5s loadingAnimation linear infinite;
     background: #eee;
     background: linear-gradient(

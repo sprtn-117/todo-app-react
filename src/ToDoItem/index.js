@@ -8,14 +8,14 @@ function ToDoItem(props) {
     <li className='ToDoItem'>
         <span className={`Icon Icon-check`} onClick={props.onComplete}>
           {props.completed ? 
-            <FontAwesomeIcon icon={faCircleCheck} color="green"/> : 
-            <FontAwesomeIcon icon={faCircle} color="orange"/>}
+            <FontAwesomeIcon icon={faCircleCheck} color="rgb(50,215,75)"/> : 
+            <FontAwesomeIcon icon={faCircle} color="rgb(255,159,10)"/>}
         </span>
         <p className={`ToDoItem-p ${props.completed && 'ToDoItem-p--complete'}`}>
           {props.text}
         </p>
         <span className="Icon Icon-delete" onClick={props.onDelete}>
-          <FontAwesomeIcon icon={faCircleXmark} color="red"/>
+          <FontAwesomeIcon icon={faCircleXmark} color="rgb(255,69,58)"/>
         </span>
     </li>
   )
